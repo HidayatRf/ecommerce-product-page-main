@@ -1,44 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/screen.css">
+
+	<title>Frontend Mentor | E-commerce product page</title>
+
 </head>
+
 <body>
+	<section class="container">
+		<nav>
+			<div class="h-item">
+				<img class="open-nav" src="./images/icon-menu.svg" alt="menu open button">
+				<h2>sneakers</h2>
+			</div>
+			<div class="nav-items">
+				<ul>
+					<li>
+						<img class="close-nav" src="./images/icon-close.svg" alt="">
+					</li>
+					<li><a href="#none" class="link">Collections</a></li>
+					<li><a href="#none" class="link">Men</a></li>
+					<li><a href="#none" class="link">Women</a></li>
+					<li><a href="#none" class="link">About</a></li>
+					<li><a href="#none" class="link">Contact</a></li>
+				</ul>
+			</div>
+			<div class="s-item">
+				<img class="cart" src="./images/icon-cart.svg" alt="cart icon">
+				<img class="avatar" src="./images/image-avatar.png" alt="avatar">
+			</div>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+		</nav>
 
-  Sneaker Company
+		<div class="wrapper">
+			<header>
+				<div class="img-container">
+					<img class="img-100" src="./images/image-product-1.jpg" alt="">
+					<div class="switch">
+						<img class="prv" src="./images/icon-previous.svg" alt="" class="prv">
+						<img class="next" src="./images/icon-next.svg" alt="" class="next">
+					</div>
+				</div>
+					<div class="preview">
+						<img src="./images/image-product-1-thumbnail.jpg" alt="">
+						<img src="./images/image-product-2-thumbnail.jpg" alt="">
+						<img src="./images/image-product-3-thumbnail.jpg" alt="">
+						<img src="./images/image-product-4-thumbnail.jpg" alt="">
+					</div>
+			
+			</header>
 
-  Fall Limited Edition Sneakers
+			<section class="main">
+				<section class="info">
+					<h3>
+						Sneaker Company
+					</h3>
+					<h2>
+						Fall Limited Edition Sneakers
+					</h2>
+					<p>
+						These low-profile sneakers are your perfect casual wear companion. Featuring a
+						durable rubber outer sole, they’ll withstand everything the weather can offer.
+					</p>
+				</section>
+				<section class="cost">
+					<div class="main-cost">
+						<h2>
+							$125.00
+						</h2>
+						<p>
+							50%
+						</p>
+					</div>
+					<p class="original-cost">
+						$250.00
+					</p>
+				</section>
+				<section class="user-i">
+					<img class="minus" src="./images/icon-minus.svg" alt="">
+					<h4 class="count">0</h4>
+					<img class="plus" src="./images/icon-plus.svg" alt="">
+					<button type="submit">
+						<h2>add to cart</h2>
+					</button>
+				</section>
+			</section>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+		</div>
 
-  $125.00
-  50%
-  $250.00
 
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+		<section class="basket">
+			<h2>cart</h2>
+			<div class="info">
+				<h3 class="info-text">your cart is empy</h3>
+				<h4></h4>
+			</div>
+			<div class="wrapper">
+				<div class="content">
+					<!--
+					<img class="product-tmb" src="./images/image-product-1-thumbnail.jpg" alt="">
+					<p class="title">Auntum Limited Edition...</p>
+					<div class="cost">
+						<p class="main-cost">$125.00</p>
+						<p class="operate">x</p>
+						<p class="count-cost">0</p>
+						<p class="result"></p>
+					</div>
+					<img class="deleteImg" src="./images/icon-delete.svg" alt="delete icon">
+					-->
+					<img class="product-tmb" src="./images/image-product-1-thumbnail.jpg" alt="">
+					<div class="info-product">
+						<p class="title">Auntum Limited Edition...</p>
+						<div class="cost">
+							<p class="main-cost">$125.00</p>
+							<p class="operate">x</p>
+							<p class="count-cost">0</p>
+							<p class="result"></p>
+						</div>
+					</div>
+					<img class="deleteImg" src="./images/icon-delete.svg" alt="delete icon">
+				</div>
+			</div>
+		</section>
+
+	</section>
+
+
+
+
+
+
+
+
+	<!--
+	<div class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+		Coded by <a href="#">Your Name Here</a>.
+	</div>
+	-->
+	<script src="main.js"></script>
 </body>
+
 </html>
